@@ -24,4 +24,4 @@ const foodProducts=[
         "image": ""
     },
    ]
-   export default foodProducts
+   export default foodProducts; 
