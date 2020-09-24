@@ -5,9 +5,15 @@ class Header extends React.Component{
         super();
 
         this.state = {
+          countCart:'' 
 
         }
 
+    }
+    componentDidMount(){
+      this.setState({
+        countCart:this.props.count
+      })
     }
     render() {
         return (
@@ -25,7 +31,7 @@ class Header extends React.Component{
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" >Cart</a>
+        <a className="nav-link" >Cart  <span className="badge badge-light">{this.state.countCart}</span></a>
           </li>
           <li className="nav-item">
             <a className="nav-link" >Login</a>
@@ -33,6 +39,7 @@ class Header extends React.Component{
         </ul>
       </div>
     </div>
+    
   </nav>
 
         )}

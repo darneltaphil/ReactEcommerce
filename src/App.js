@@ -4,7 +4,6 @@ import "./components/vendor/bootstrap/css/bootstrap.min.css";
 import "./components/css/shop-homepage.css";
 import Pageframe from './components/Pageframe';
 
-
 export default class  App extends React.Component  {
   constructor(){
     super();
