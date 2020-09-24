@@ -13,7 +13,7 @@ function  Shopitem (props) {
                 <h5>{props.price }</h5>
                 <small style={{color:!props.quantity && "red"}}>{props.quantity ? props.quantity+" In-Stock": "Sold Out"} </small>
                 <p className="card-text">{props.description}</p>
-                <button className="btn btn-primary " >{props.addtocart}</button>
+                <button className="btn btn-primary " id={props.un} >Add to Cart</button>
               </div>
               <div className="card-footer">
               <small className="text-muted">{props.rating}</small>

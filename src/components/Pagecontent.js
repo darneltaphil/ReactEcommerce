@@ -17,9 +17,9 @@ class  Pagecontent extends React.Component {
 
   //Lifecycle Methods
   componentDidMount(prevProps, prevState){
-    if(prevState){
+    if(prevProps){
     if (this.props.category !== prevState.categoryClicked) {
-      this.setState({categoryClicked:prevProps.category });
+      this.setState({categoryClicked:this.props.category });
       const cat = this.state.categoryClicked
       console.log(" Category Clicked "+ cat)
     }
@@ -59,10 +59,11 @@ class  Pagecontent extends React.Component {
   render(){
 
  
-        return (<>
+        return (
           <div className="row">
-          {this.state.electronicsProductsList.map(item => <Shopitem  key={item.id} imageUrl= {item.image} price= {item.price} name= {item.name} description={item.description} addtocart= {item.addtocart} quantity={item.quantity} rating= "&#9733; &#9733; &#9733; &#9733; &#9734;" />)}
-           </div>  </>
+          {this.state.isLoading ? <center><h1>Loading...</h1></center> :<>{this.state.electronicsProductsList.map(item => <Shopitem  key={item.id} un={item.id} imageUrl= {item.image} price= {item.price} name= {item.name} description={item.description} addtocart= {item.addtocart} quantity={item.quantity} rating= "&#9733; &#9733; &#9733; &#9733; &#9734;" />)}</>}
+
+           </div>  
         );
       } 
 }

@@ -42,7 +42,7 @@ render() {
             <div className="col-lg-3">
                 <h1 class="my-4">All In One Shop</h1>
               <div class="list-group card hover ">
-                <div className="card-header bg-primary text-white display-4">Categories</div>
+                <div className="card-header bg-primary text-white h4">Categories</div>
                 <a  id="electronics" class="list-group-item" onClick={this.handleChoice}>Home Applicances</a>
                 <a id="sports" class="list-group-item " onClick={this.handleChoice}>Sports</a>
                 <a  id="food" class="list-group-item" onClick={this.handleChoice}>Culinary</a>
