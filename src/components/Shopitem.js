@@ -1,8 +1,7 @@
 import React , { useState } from "react";
 
 function  Shopitem (props) {
-  // Declare a new state variable, which we'll call "count" 
-   const [cart, setCount] = useState([]);
+
         return (
         
           <div className="col-lg-4 col-md-6 mb-4">

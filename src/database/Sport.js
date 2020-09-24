@@ -5,7 +5,7 @@ const sportProducts=[
         "price": "75.22",
         "quantity": "1",
         "description": "blah blah blah about the Nike sneakers",
-        "image": "http://codeskulptor-assets.commondatastorage.googleapis.com/assets_clock_background.png"
+        "image": "https://skitterphoto.com/photos/skitterphoto-3698-default.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@ const sportProducts=[
         "price": "5",
         "quantity": "",
         "description": "This one, .... You don't need to chase a cat. You put it in the bread already",
-        "image": "http://placehold.it/700x400"
+        "image": "https://skitterphoto.com/photos/skitterphoto-3698-default.jpg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@ const sportProducts=[
         "price": "155",
         "quantity": "2",
         "description": "The best fresh tomato in the district",
-        "image": "http://placehold.it/700x400"
+        "image": "https://media.istockphoto.com/photos/3d-rendering-soccer-ball-in-goal-soccer-ball-in-net-with-spotlight-or-picture-id943787474"
     },
    ]
    export default sportProducts; 

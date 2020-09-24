@@ -4,7 +4,6 @@ import electronicsProducts from "../database/Electronics";
 import foodProducts from "../database/Food";
 import sportProducts from "../database/Sport";
 import allProducts from "../database/Allitems";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class  Pageframe extends Component {
   constructor(){
@@ -26,15 +25,9 @@ class  Pageframe extends Component {
      setTimeout(() => {
         this.setState({
           isLoading: false,
-          
         })
       }, 2500)
   }
-
-  componentDidUpdate(prevProps, prevState){
-
-}
-
   //My Methods
 handleChoice = (e) => {
     this.setState({
@@ -55,7 +48,6 @@ handleChoice = (e) => {
     if(e.target.id=='sports'){this.setState({
       productsList: sportProducts,
       title:"Sports Items"
-
     })}
 }
 render() {
@@ -82,8 +74,8 @@ render() {
           <center><h1 className='text-primary flex'>Loading...</h1></center> :
           <>{this.state.productsList.map(item => <Shopitem  key={item.id} un={item.id} imageUrl= {item.image} price= {item.price} name= {item.name} description={item.description} addtocart= {item.addtocart} quantity={item.quantity} rating= "&#9733; &#9733; &#9733; &#9733; &#9734;" />)}</>}
 
-</div>
-</div>
+        </div>
+        </div>
        
       </div>
         
