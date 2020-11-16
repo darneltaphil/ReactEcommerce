@@ -17,7 +17,7 @@ class  Pageframe extends Component {
     };
 
     //Binding
-   this.handleChoice = this.handleChoice.bind(this);
+   //this.handleChoice = this.handleChoice.bind(this);
 }
 
   //Lifecycle Methods
